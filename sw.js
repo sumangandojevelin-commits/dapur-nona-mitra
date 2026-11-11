@@ -1,8 +1,9 @@
-const CACHE_NAME = 'dapur-nona-cache-v3';
+const CACHE_NAME = 'dapur-nona-cache-vfinal';
 const urlsToCache = [
   '/dapur-nona-mitra/',
   '/dapur-nona-mitra/index.html',
-  '/dapur-nona-mitra/manifest.json'
+  '/dapur-nona-mitra/manifest.json',
+  '/dapur-nona-mitra/LOGO_DAPUR_NONA.png'
 ];
 
 self.addEventListener('install', event => {
