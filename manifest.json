@@ -1,25 +1,40 @@
 {
+  "id": "dapurnona-app-v1",
   "name": "Dapur Nona Mitra",
   "short_name": "DapurNona",
   "description": "Aplikasi pemesanan makanan dan minuman Dapur Nona Mitra.",
-  "start_url": "/dapur-nona-mitra/",
-  "scope": "/dapur-nona-mitra/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "orientation": "any",
+  "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#6B0D10",
   "icons": [
     {
-      "src": "https://sumangandojevelin-commits.github.io/dapur-nona-mitra/icon-192x192.png",
+      "src": "./icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "https://sumangandojevelin-commits.github.io/dapur-nona-mitra/icon-512x512.png",
+      "src": "./icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./LOGO_DAPUR_NONA.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./LOGO_DAPUR_NONA.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow"
     }
   ]
 }
