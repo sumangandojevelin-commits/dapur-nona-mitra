@@ -1,5 +1,5 @@
 {
-  "id": "dapurnona-app-v2",
+  "id": "dapurnona-app-vfinal",
   "name": "Dapur Nona Mitra",
   "short_name": "DapurNona",
   "description": "Aplikasi pemesanan makanan dan minuman Dapur Nona Mitra.",
@@ -11,13 +11,13 @@
   "theme_color": "#6B0D10",
   "icons": [
     {
-      "src": "https://placehold.co/192x192/png",
+      "src": "https://sumangandojevelin-commits.github.io/dapur-nona-mitra/LOGO_DAPUR_NONA.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://placehold.co/512x512/png",
+      "src": "https://sumangandojevelin-commits.github.io/dapur-nona-mitra/LOGO_DAPUR_NONA.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -25,14 +25,14 @@
   ],
   "screenshots": [
     {
-      "src": "https://placehold.co/1280x720/png",
-      "sizes": "1280x720",
+      "src": "https://sumangandojevelin-commits.github.io/dapur-nona-mitra/LOGO_DAPUR_NONA.png",
+      "sizes": "512x512",
       "type": "image/png",
       "form_factor": "wide"
     },
     {
-      "src": "https://placehold.co/720x1280/png",
-      "sizes": "720x1280",
+      "src": "https://sumangandojevelin-commits.github.io/dapur-nona-mitra/LOGO_DAPUR_NONA.png",
+      "sizes": "512x512",
       "type": "image/png",
       "form_factor": "narrow"
     }
