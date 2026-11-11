@@ -6,27 +6,21 @@
 <title>Dapur Nona Mitra</title>
 
 <!-- ========================================== -->
-<!-- TAMBAHAN UNTUK PWA GITHUB PAGES DIMULAI -->
+<!-- INTEGRASI PWA -->
 <!-- ========================================== -->
-<link rel="manifest" href="/dapur-nona-mitra/manifest.json">
-<meta name="theme-color" content="#ffffff">
-<link rel="apple-touch-icon" href="/dapur-nona-mitra/icon-192x192.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#6B0D10">
+<link rel="apple-touch-icon" href="./icon-192x192.png">
 
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/dapur-nona-mitra/sw.js')
-        .then(registration => {
-          console.log('Service Worker berhasil didaftarkan dengan scope:', registration.scope);
-        })
-        .catch(error => {
-          console.log('Service Worker gagal didaftarkan:', error);
-        });
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('SW terdaftar pada:', reg.scope))
+        .catch(err => console.error('SW gagal:', err));
     });
   }
 </script>
-<!-- ========================================== -->
-<!-- TAMBAHAN UNTUK PWA GITHUB PAGES SELESAI -->
 <!-- ========================================== -->
 
 <link href="https://fonts.googleapis.com/css2?family=Chango&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
@@ -111,7 +105,7 @@ input.f:focus,textarea:focus{outline:3px solid var(--gold);border-color:var(--br
 .tick{width:80px;height:80px;border-radius:50%;background:var(--ok);color:#fff;font-size:44px;display:grid;place-items:center;margin:0 auto 10px;animation:pop .55s}
 @keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.18)}100%{transform:scale(1)}}
 .struk{position:relative;background:#fff;color:#222;font-family:'Courier New',ui-monospace,monospace;font-size:14px;padding:18px 16px 26px;margin:14px 0 4px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.struk::after{content:"absolute;left:0;right:0;bottom:-9px;height:10px;background:radial-gradient(circle at 7px -1px,transparent 7px,#fff 7.5px) 0 0/14px 10px repeat-x}
+.struk::after{content:"";position:absolute;left:0;right:0;bottom:-9px;height:10px;background:radial-gradient(circle at 7px -1px,transparent 7px,#fff 7.5px) 0 0/14px 10px repeat-x}
 .struk img{display:block;width:62px;margin:0 auto 6px}
 .struk h4{text-align:center;margin:0;font-size:16px}
 .struk .c{text-align:center;color:#666;font-size:12px}
@@ -184,7 +178,7 @@ body:not([data-m=login]) .g-login,body:not([data-m=cust]) .g-cust,body:not([data
 
 <header class="pg g-cust on" id="pg-home">
  <div class="hero"><div class="ring r1"></div><div class="ring r2"></div>
-  <img class="logo" id="lg2" alt="Logo Dapur Nona Mitra" src="">
+  <img class="logo" id="lg2" alt="Logo Dapur Nona Mitra" src="LOGO_DAPUR_NONA.png">
   <h1>Dapur Nona</h1><p>MITRA</p>
   <div class="pills"><span>🍛 Masakan khas Mitra</span><span>📱 Bayar QRIS</span><span>🧾 Struk digital</span></div></div>
  <div id="hm" style="margin-top:-34px;position:relative;background:var(--bg);border-radius:26px 26px 0 0;padding-top:6px"></div>
@@ -200,7 +194,7 @@ body:not([data-m=login]) .g-login,body:not([data-m=cust]) .g-cust,body:not([data
  <button data-go="cart"><span class="bag" id="bag">🛒<i id="bc">0</i></span>Keranjang</button><button data-go="profile"><span>👤</span>Profil</button></nav>
 
 <div class="g-admin" id="adm">
- <div class="ah"><img id="lg3" alt=""><div><b>Dapur Nona Mitra</b><small>Panel Admin</small></div><button class="chip" id="alo">Keluar</button></div>
+ <div class="ah"><img id="lg3" alt="" src="LOGO_DAPUR_NONA.png"><div><b>Dapur Nona Mitra</b><small>Panel Admin</small></div><button class="chip" id="alo">Keluar</button></div>
  <main class="pa on" id="pa-dash"></main><main class="pa" id="pa-ord"></main><main class="pa" id="pa-mn"></main><main class="pa" id="pa-set"></main>
  <nav class="nav" id="na" aria-label="Navigasi admin">
   <button data-ago="dash" class="on"><span>📊</span>Ringkasan</button><button data-ago="ord"><span class="bag">🧾<i id="nb">0</i></span>Pesanan</button>
